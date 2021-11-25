@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE94DE3D274FC56D0021075F /* TvShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94DE3C274FC56D0021075F /* TvShowsViewController.swift */; };
+		DE94DE3F274FCC340021075F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94DE3E274FCC330021075F /* ProfileViewController.swift */; };
+		DE94DE43274FDD5D0021075F /* TvShowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94DE41274FDD5D0021075F /* TvShowsCell.swift */; };
+		DE94DE44274FDD5D0021075F /* TvShowsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE94DE42274FDD5D0021075F /* TvShowsCell.xib */; };
+		DE94DE48275016150021075F /* TvShowResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94DE47275016150021075F /* TvShowResponseModel.swift */; };
+		DE94DE4A275025D20021075F /* TvShowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94DE49275025D20021075F /* TvShowsPresenter.swift */; };
+		DE94DE4C27502FFE0021075F /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94DE4B27502FFE0021075F /* NetworkingManager.swift */; };
 		DEBACC3C274D661400CD3D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC3B274D661400CD3D0B /* AppDelegate.swift */; };
 		DEBACC3E274D661400CD3D0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC3D274D661400CD3D0B /* SceneDelegate.swift */; };
-		DEBACC40274D661400CD3D0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC3F274D661400CD3D0B /* ViewController.swift */; };
+		DEBACC40274D661400CD3D0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC3F274D661400CD3D0B /* LoginViewController.swift */; };
 		DEBACC43274D661400CD3D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBACC41274D661400CD3D0B /* Main.storyboard */; };
 		DEBACC45274D661600CD3D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBACC44274D661600CD3D0B /* Assets.xcassets */; };
 		DEBACC48274D661600CD3D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBACC46274D661600CD3D0B /* LaunchScreen.storyboard */; };
+		DEBACC59274F0A5200CD3D0B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC58274F0A5200CD3D0B /* UserModel.swift */; };
+		DEBACC5D274F0B5B00CD3D0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC5C274F0B5B00CD3D0B /* LoginPresenter.swift */; };
+		DEBACC62274F189D00CD3D0B /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBACC61274F189D00CD3D0B /* TokenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE94DE3C274FC56D0021075F /* TvShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsViewController.swift; sourceTree = "<group>"; };
+		DE94DE3E274FCC330021075F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DE94DE41274FDD5D0021075F /* TvShowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsCell.swift; sourceTree = "<group>"; };
+		DE94DE42274FDD5D0021075F /* TvShowsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TvShowsCell.xib; sourceTree = "<group>"; };
+		DE94DE47275016150021075F /* TvShowResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowResponseModel.swift; sourceTree = "<group>"; };
+		DE94DE49275025D20021075F /* TvShowsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsPresenter.swift; sourceTree = "<group>"; };
+		DE94DE4B27502FFE0021075F /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		DEBACC38274D661400CD3D0B /* ExamenCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBACC3B274D661400CD3D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBACC3D274D661400CD3D0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEBACC3F274D661400CD3D0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEBACC3F274D661400CD3D0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEBACC42274D661400CD3D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEBACC44274D661600CD3D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBACC47274D661600CD3D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBACC49274D661600CD3D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBACC58274F0A5200CD3D0B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DEBACC5C274F0B5B00CD3D0B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		DEBACC61274F189D00CD3D0B /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE94DE40274FDCE50021075F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DE94DE41274FDD5D0021075F /* TvShowsCell.swift */,
+				DE94DE42274FDD5D0021075F /* TvShowsCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		DEBACC2F274D661400CD3D0B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +85,56 @@
 		DEBACC3A274D661400CD3D0B /* ExamenCoppel */ = {
 			isa = PBXGroup;
 			children = (
+				DE94DE40274FDCE50021075F /* UI */,
+				DEBACC57274F0A2000CD3D0B /* NetworkManagement */,
+				DEBACC56274F0A1700CD3D0B /* Models */,
+				DEBACC55274F0A1200CD3D0B /* Views */,
+				DEBACC53274F0A0000CD3D0B /* Presenters */,
 				DEBACC3B274D661400CD3D0B /* AppDelegate.swift */,
 				DEBACC3D274D661400CD3D0B /* SceneDelegate.swift */,
-				DEBACC3F274D661400CD3D0B /* ViewController.swift */,
 				DEBACC41274D661400CD3D0B /* Main.storyboard */,
 				DEBACC44274D661600CD3D0B /* Assets.xcassets */,
 				DEBACC46274D661600CD3D0B /* LaunchScreen.storyboard */,
 				DEBACC49274D661600CD3D0B /* Info.plist */,
 			);
 			path = ExamenCoppel;
+			sourceTree = "<group>";
+		};
+		DEBACC53274F0A0000CD3D0B /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				DEBACC5C274F0B5B00CD3D0B /* LoginPresenter.swift */,
+				DE94DE49275025D20021075F /* TvShowsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		DEBACC55274F0A1200CD3D0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEBACC3F274D661400CD3D0B /* LoginViewController.swift */,
+				DE94DE3C274FC56D0021075F /* TvShowsViewController.swift */,
+				DE94DE3E274FCC330021075F /* ProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEBACC56274F0A1700CD3D0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEBACC58274F0A5200CD3D0B /* UserModel.swift */,
+				DEBACC61274F189D00CD3D0B /* TokenModel.swift */,
+				DE94DE47275016150021075F /* TvShowResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEBACC57274F0A2000CD3D0B /* NetworkManagement */ = {
+			isa = PBXGroup;
+			children = (
+				DE94DE4B27502FFE0021075F /* NetworkingManager.swift */,
+			);
+			path = NetworkManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +196,7 @@
 			files = (
 				DEBACC48274D661600CD3D0B /* LaunchScreen.storyboard in Resources */,
 				DEBACC45274D661600CD3D0B /* Assets.xcassets in Resources */,
+				DE94DE44274FDD5D0021075F /* TvShowsCell.xib in Resources */,
 				DEBACC43274D661400CD3D0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBACC40274D661400CD3D0B /* ViewController.swift in Sources */,
+				DEBACC40274D661400CD3D0B /* LoginViewController.swift in Sources */,
+				DEBACC62274F189D00CD3D0B /* TokenModel.swift in Sources */,
+				DE94DE48275016150021075F /* TvShowResponseModel.swift in Sources */,
+				DEBACC59274F0A5200CD3D0B /* UserModel.swift in Sources */,
 				DEBACC3C274D661400CD3D0B /* AppDelegate.swift in Sources */,
 				DEBACC3E274D661400CD3D0B /* SceneDelegate.swift in Sources */,
+				DE94DE4A275025D20021075F /* TvShowsPresenter.swift in Sources */,
+				DE94DE3D274FC56D0021075F /* TvShowsViewController.swift in Sources */,
+				DE94DE3F274FCC340021075F /* ProfileViewController.swift in Sources */,
+				DE94DE4C27502FFE0021075F /* NetworkingManager.swift in Sources */,
+				DEBACC5D274F0B5B00CD3D0B /* LoginPresenter.swift in Sources */,
+				DE94DE43274FDD5D0021075F /* TvShowsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
