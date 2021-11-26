@@ -15,6 +15,7 @@ struct TvShowResponseModel: Decodable{
 }
 
 struct TvShowModel: Decodable{
+    //Las variables comentadas son los demas valores de TvShow
     //let backdrop_path: String?
     let first_air_date: String?
     //let genre_ids:[Int]?
@@ -24,8 +25,8 @@ struct TvShowModel: Decodable{
     //let original_language: String?
     //let original_name: String?
     let overview: String?
-    let popularity: Double?
+    //let popularity: Double?
     let poster_path: String?
-    //let vote_average: Double?
+    let vote_average: Double?
     //let vote_count: Int?
 }

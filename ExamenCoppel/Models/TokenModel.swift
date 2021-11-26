@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct TokenModel: Codable{
-    let success: Bool
-    let expires_at: String
-    let request_token: String
+struct TokenModel: Decodable{
+    let success: Bool?
+    let expires_at: String?
+    let request_token: String?
+}
+
+struct SessionModel: Decodable {
+    let success: String?
+    let session_id: String?
 }

@@ -16,14 +16,11 @@ final class NetworkinManager {
     private let baseTvShowsURL = "https://api.themoviedb.org/3/tv/"
 
 //MARK: - getTvShows
-    func getTvShows(id:String?, success: @escaping(_ tvShowModelList:[TvShowModel]) -> (),failure: @escaping(_ error: String?) -> ()){
-        
+    func getTvShows(id:String?, success: @escaping(_ tvShowModelList:[TvShowModel]?) -> ()){
         guard let url = URL(string: "\(baseTvShowsURL)\( id!)?api_key=e129eae338aa9949fc6a91b416d2331a&language=en-US&page=1") else {return}
-        
-        let task = URLSession.shared.dataTask(with: url){[weak self] data, _, error in
+        let task = URLSession.shared.dataTask(with: url){data, response, error in
             //Validate the data is not null
             guard let data = data, error == nil else {
-                failure("Error")
                 return
             }
             do{
@@ -32,9 +29,46 @@ final class NetworkinManager {
             }
             catch{
                 print(error)
+                success(nil)
             }
         }
         task.resume()
     }
     
+//MARK: - getToken
+    public func getToken(success: @escaping(_ token:String?) -> ()){
+        guard let url = URL(string: "https://api.themoviedb.org/3/authentication/token/new?api_key=\(apiKey)") else {return}
+        let task = URLSession.shared.dataTask(with: url){[weak self] data, response, error in
+            guard let data = data, error == nil else {return}
+            print("Inside get token")
+            do{
+                let tokenInfo =  try JSONDecoder().decode(TokenModel.self, from: data)
+                success(tokenInfo.request_token)
+                print(tokenInfo)
+            }
+            catch{
+                print(error)
+                success(nil)
+            }
+        }
+        task.resume()
+    }
+//MARK: - SessionId
+    public func getSessioniId(token: String, success: @escaping(_ sessionId:String?) -> ()){
+        guard let url = URL(string: "https://api.themoviedb.org/3/authentication/session/new?api_key=\(apiKey)&request_token=\(token)") else {return}
+        let task = URLSession.shared.dataTask(with: url){[weak self] data, response, error in
+            guard let data = data, error == nil else {return}
+            print("Inside get token")
+            do{
+                let session =  try JSONDecoder().decode(SessionModel.self, from: data)
+                success(session.session_id)
+                print(session)
+            }
+            catch{
+                print(error)
+                success(nil)
+            }
+        }
+        task.resume()
+    }
 }
